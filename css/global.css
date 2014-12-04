@@ -1,0 +1,12 @@
+/* 
+    Created on : 4 déc. 2014, 20:33:36
+    Author     : Pipe My Fork - Nuit de l'info 2014
+*/
+/* line 9, ../sass/global.scss */
+header li a:hover {
+  background-color: inherit !important;
+}
+/* line 12, ../sass/global.scss */
+header li a img {
+  width: 150px;
+}

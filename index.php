@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
     Created on : 4 déc. 2014, 20:33:36
-    Author     : Vincent
+    Author     : Pipe My Fork - Nuit de l'info 2014
 -->
 
 <?php
@@ -31,7 +31,11 @@
     </head>
     <body>
         <header>
-            
+            <ul class="nav nav-pills">
+                <li><a href="index.php?page=PreventionEtInformation_Actualite.tpl"><img src="img/prevention.jpg" class="img-circle img-responsive">Prévention & Information</a></li>
+                <li><a href="index.php?page=CampagneVaccination.tpl"><img src="img/prevention.jpg" class="img-circle img-responsive">Campagne de vaccination</a></li>
+                <li><a href="#"><img src="img/prevention.jpg" class="img-circle img-responsive">Déplacement de population</a></li>
+            </ul>
         </header>
         <div class="container">
             <!-- Contenu importé depuis les differentes pages : "nom_page".tpl -->
@@ -48,4 +52,19 @@
             
         </footer>
     </body>
+    
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        
+        <!-- Local Bootstrap core JavaScript -->
+        <script src="bootstrap-3.3.1/js/bootstrap.min.js"></script>
+        
+        <!-- CDN Bootstrap core JavaScript :
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> 
+        -->
+        
+        <!-- JavaScript du projet -->
+        <script src="js/global.js"></script>
 </html>
