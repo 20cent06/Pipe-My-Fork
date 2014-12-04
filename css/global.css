@@ -14,17 +14,22 @@ header ul {
 header ul li {
   text-align: center;
 }
-/* line 14, ../sass/global.scss */
+/* line 13, ../sass/global.scss */
+header ul li a {
+  width: 180px;
+  margin: auto;
+}
+/* line 16, ../sass/global.scss */
 header ul li a:hover {
   background-color: inherit !important;
 }
-/* line 18, ../sass/global.scss */
+/* line 20, ../sass/global.scss */
 header ul li a img {
   width: 150px;
   margin: auto;
 }
 
-/* line 31, ../sass/global.scss */
+/* line 30, ../sass/global.scss */
 div .cadre-image {
   width: 100px;
 }

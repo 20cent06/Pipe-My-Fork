@@ -11,6 +11,8 @@ header {
         li {
             text-align: center;
             a {
+                width: 180px;
+                margin: auto;
                 &:hover{
                     background-color: inherit !important;
                 }
