@@ -40,7 +40,7 @@
                     include('templates/' . $page);
                 }
                 else {
-                    include('templates/PreventionEtInformation_Recherche.tpl');
+                    include('templates/PreventionEtInformation_Actualite.tpl');
                 }
             ?>
         </div>
