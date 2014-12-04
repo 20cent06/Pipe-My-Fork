@@ -30,6 +30,6 @@ header ul li a img {
 }
 
 /* line 30, ../sass/global.scss */
-div .cadre-image {
-  width: 100px;
+div .cadre-contenu {
+  display: block;
 }
