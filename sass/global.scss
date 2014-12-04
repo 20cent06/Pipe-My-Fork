@@ -9,10 +9,8 @@ header {
     ul {
         background-color: $header_background;
         li {
+            text-align: center;
             a {
-                width: 200px;
-                margin: auto;
-
                 &:hover{
                     background-color: inherit !important;
                 }

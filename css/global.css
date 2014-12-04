@@ -10,16 +10,15 @@
 header ul {
   background-color: #397bce;
 }
-/* line 12, ../sass/global.scss */
-header ul li a {
-  width: 200px;
-  margin: auto;
+/* line 11, ../sass/global.scss */
+header ul li {
+  text-align: center;
 }
-/* line 16, ../sass/global.scss */
+/* line 14, ../sass/global.scss */
 header ul li a:hover {
   background-color: inherit !important;
 }
-/* line 20, ../sass/global.scss */
+/* line 18, ../sass/global.scss */
 header ul li a img {
   width: 150px;
   margin: auto;

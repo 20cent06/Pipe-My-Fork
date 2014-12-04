@@ -32,9 +32,9 @@
     <body>
         <header>
             <ul class="nav nav-justified nav-pills">
-                <li><a href="index.php?page=PreventionEtInformation_Actualite.tpl"><img src="img/prevention.jpg" class="img-circle img-responsive">Prévention & Information</a></li>
-                <li><a href="index.php?page=CampagneVaccination.tpl"><img src="img/prevention.jpg" class="img-circle img-responsive">Campagne de vaccination</a></li>
-                <li><a href="#"><img src="img/prevention.jpg" class="img-circle img-responsive">Déplacement de population</a></li>
+                <li><a href="index.php?page=PreventionEtInformation_Actualite.tpl"><img src="img/prevention.jpg" class="img-circle img-responsive"></a>Prévention & Information</li>
+                <li><a href="index.php?page=CampagneVaccination.tpl"><img src="img/prevention.jpg" class="img-circle img-responsive"></a>Campagne de vaccination</li>
+                <li><a href="#"><img src="img/prevention.jpg" class="img-circle img-responsive"></a>Déplacement de population</li>
             </ul>
         </header>
         <div class="container">
