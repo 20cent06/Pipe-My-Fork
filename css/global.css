@@ -25,3 +25,8 @@ header ul li a img {
   width: 150px;
   margin: auto;
 }
+
+/* line 31, ../sass/global.scss */
+div .cadre-image {
+  width: 100px;
+}
