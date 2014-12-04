@@ -2,11 +2,26 @@
     Created on : 4 déc. 2014, 20:33:36
     Author     : Pipe My Fork - Nuit de l'info 2014
 */
+/* 
+    Created on : 5 déc. 2014, 00:26:16
+    Author     : Pipe My Fork - Nuit de l'info 2014
+*/
 /* line 9, ../sass/global.scss */
-header li a:hover {
-  background-color: inherit !important;
+header ul {
+  background-color: #397bce;
 }
 /* line 12, ../sass/global.scss */
-header li a img {
+header ul li a {
+  width: 200px;
+  margin: auto;
+  margin-top: 50px;
+}
+/* line 17, ../sass/global.scss */
+header ul li a:hover {
+  background-color: inherit !important;
+}
+/* line 21, ../sass/global.scss */
+header ul li a img {
   width: 150px;
+  margin: auto;
 }

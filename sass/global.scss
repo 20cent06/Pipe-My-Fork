@@ -3,14 +3,25 @@
     Author     : Pipe My Fork - Nuit de l'info 2014
 */
 
+@import "variables";
+
 header {
-    li {
-        a {
-            &:hover{
-                background-color: inherit !important;
-            }
-            img {
-                width: 150px;
+    ul {
+        background-color: $header_background;
+        li {
+            a {
+                width: 200px;
+                margin: auto;
+                margin-top: 50px;
+
+                &:hover{
+                    background-color: inherit !important;
+                }
+
+                img {
+                    width: 150px;
+                    margin: auto;
+                }
             }
         }
     }
