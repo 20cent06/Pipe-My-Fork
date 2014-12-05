@@ -54,8 +54,10 @@
             $vaccin = $_POST['vaccin'];
             $version = $_POST['version'];
             
-            $insert = "INSERT INTO personne(nom, prenom, age, sexe, idFoyer) VALUES ('$nom','$prenom','$age','$sexe')";
-            $recupId = "";
+            $insert = "INSERT INTO personne(nom, prenom, age, sexe) VALUES ('$nom','$prenom','$age','$sexe');";
+            $recupId = "SELECT id FROM personne WHERE nom = '$nom' AND prenom = '$prenom';";
+            $insert = "";
+            
             if (empty ($nom)||($prenom)||($age)||($sexe)||($vaccin)||($version)){
                 echo "Veuillez renseigner toutes les informations du formulaires !";
             }

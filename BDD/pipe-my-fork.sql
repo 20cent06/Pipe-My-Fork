@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 05 Décembre 2014 à 02:18
+-- Généré le :  Ven 05 Décembre 2014 à 03:28
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -19,6 +19,19 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `pipe-my-fork`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `actulieu`
+--
+
+CREATE TABLE IF NOT EXISTS `actulieu` (
+  `idNew` int(11) NOT NULL,
+  `lieux` varchar(45) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`idNew`,`lieux`),
+  KEY `lieux` (`lieux`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -129,6 +142,13 @@ CREATE TABLE IF NOT EXISTS `vaccination` (
 --
 -- Contraintes pour les tables exportées
 --
+
+--
+-- Contraintes pour la table `actulieu`
+--
+ALTER TABLE `actulieu`
+  ADD CONSTRAINT `actulieu_ibfk_1` FOREIGN KEY (`idNew`) REFERENCES `news` (`id`),
+  ADD CONSTRAINT `actulieu_ibfk_2` FOREIGN KEY (`lieux`) REFERENCES `localisation` (`lieux`);
 
 --
 -- Contraintes pour la table `foyer`
