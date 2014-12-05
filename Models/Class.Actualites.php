@@ -16,11 +16,11 @@ class Actualites{
 		$pdo = PdoTpPhp::getPdoTpPhp();
 		$actualite = $pdo->getActualite($id); 
 
-		$this->id = $actualite['ID'];
-		$this->titre = $actualite['TITRE'];
-		$this->info = $actualite['CHEMINGROUPE'];
-		$this->dates = $actualite['DATES'];
-		$this->info = $actualite['IMAGE'];
+		$this->id = $actualite['id'];
+		$this->titre = $actualite['titre'];
+		$this->info = $actualite['info'];
+		$this->dates = $actualite['dates'];
+		$this->info = $actualite['image'];
 	} // public function __construct(...)
 
 
