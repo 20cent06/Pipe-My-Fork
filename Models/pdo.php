@@ -46,7 +46,7 @@ class PdoTpPhp{
 	public function getActualite($id){
 		$req = "SELECT ID, TITRE, INFO, IMAGE, DATES FROM NEWS
 		WHERE ID='$id'";
-		$rs = PdoTpPhp::monPdo->query($req);
+		$rs = PdoTpPhp::$monPdo->query($req);
 		$ligne = $rs->fetch();
 		return $ligne;
 	}
@@ -57,6 +57,7 @@ class PdoTpPhp{
 		$rs = PdoTpPhp::$monPdo->query($req);
 		$tableau = $rs->fetchAll();
 		return $tableau;
+        }
 
 
 	public function getInfosAnimateur($login, $mdp){
