@@ -14,14 +14,14 @@ html {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes header-background {
     0%   {height: 95px;}
-    50%  {height: 100%;}
+    50%  {height: 50%;}
     100% {height: 95px;}
 }
 
 /* Standard syntax */
 @keyframes header-background {
     0%   {height: 95px;}
-    50%  {height: 100%;}
+    50%  {height: 50%;}
     100% {height: 95px;}
 }
 
@@ -29,19 +29,20 @@ html {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes header-buttons {
     0%   {padding-top: 0px;}
-    50%  {padding-top: 40vh;}
+    50%  {padding-top: 40.5vh;}
     100% {padding-top: 0px;}
 }
 
 /* Standard syntax */
 @keyframes header-buttons {
     0%   {padding-top: 0px;}
-    50%  {padding-top: 40vh;}
+    50%  {padding-top: 40.5vh;}
     100% {padding-top: 0px;}
 }
 
 header {
     position: absolute;
+    height: 100%;
     #header-background {
         width: 100%;
         position: absolute;
@@ -70,7 +71,7 @@ header {
 }
 
 .container {
-    padding-top: 180px;
+    padding-top: 200px;
 }
 
 /* Acutalité */

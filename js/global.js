@@ -6,6 +6,7 @@
 $( document ).ready(function(){
     $("#header-background").css("-webkit-animation", "header-background 3s linear alternate"); //Chrome, Safari, Opera
     $("#header-background").css("animation", "header-background 3s linear alternate"); //Standard syntax
-    $("header ul").css("-webkit-animation", "header-buttons 2.8s linear alternate"); //Chrome, Safari, Opera
-    $("header ul").css("animation", "header-buttons 2.8s linear alternate"); //Standard syntax
+    $("header ul li").css("-webkit-animation", "header-buttons 3s linear alternate"); //Chrome, Safari, Opera
+    $("header ul li").css("animation", "header-buttons 3s linear alternate"); //Standard syntax
+    $(".container").slideDown();
 });
