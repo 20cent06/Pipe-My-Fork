@@ -7,8 +7,8 @@
  */
 
 $hote = 'localhost';
-$bdd_login = 'root';
-$bdd_mdp = '';
+$bdd_login = 'user';
+$bdd_mdp = 'user';
 $bdd = 'pipe-my-fork';
 
 mysql_connect($hote, $bdd_login, $bdd_mdp);
