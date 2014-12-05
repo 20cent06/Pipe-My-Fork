@@ -46,6 +46,6 @@ class Personnes{
 
 	public static function addPersonne($nom, $prenom, $age, $sexe){
 		$pdo = PdoTpPhp::getPdoTpPhp();
-		$add = $pdo->addPersonne($nom, $prenom, $age, $sexe);
+		$pdo->addPersonne($nom, $prenom, $age, $sexe);
 	}
 }
