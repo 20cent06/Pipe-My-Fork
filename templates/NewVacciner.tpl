@@ -5,43 +5,63 @@
         <div class="form-group">
           <label class="col-sm-2 control-label">Nom : </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Nom">
+            <input name="nom" type="text" class="form-control" placeholder="Nom">
           </div>
         </div>
         <div class="form-group">
           <label class="col-sm-2 control-label">Prénom : </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Prenom">
+            <input name="prenom" type="text" class="form-control" placeholder="Prenom">
           </div>
         </div>
         <div class="form-group">
           <label class="col-sm-2 control-label">Age : </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Age">
+            <input name="age" type="text" class="form-control" placeholder="Age">
           </div>
         </div>
     <div class="form-group">
           <label class="col-sm-2 control-label">Sexe : </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Sexe">
+            <input name="sexe" type="text" class="form-control" placeholder="Sexe">
           </div>
         </div>
     <div class="form-group">
           <label class="col-sm-2 control-label">Nom du Vaccin utiliser : </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Vaccin">
+            <input name="vaccin" type="text" class="form-control" placeholder="Vaccin">
           </div>
         </div>
     <div class="form-group">
           <label class="col-sm-2 control-label">Version du Vaccin : </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Version">
+            <input name="version" type="text" class="form-control" placeholder="Version">
           </div>
         </div>
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <button type="button" class="btn btn-primary">Enregistrer</button>
+            <button name="valider" type="button" class="btn btn-primary">Enregistrer</button>
           </div>
         </div>
 </form>
+    <?php
+        //si l'utilisateur valide
+        if (isset ($_POST['valider'])){
+            $nom = $_POST['nom'];
+            $prenom = $_POST['prenom'];
+            $age = $_POST['age'];
+            $sexe = $_POST['sexe'];
+            $vaccin = $_POST['vaccin'];
+            $version = $_POST['version'];
+            
+            $insert = "INSERT INTO personne(nom, prenom, age, sexe, idFoyer) VALUES ('$nom','$prenom','$age','$sexe')";
+            $recupId = "";
+            if (empty ($nom)||($prenom)||($age)||($sexe)||($vaccin)||($version)){
+                echo "Veuillez renseigner toutes les informations du formulaires !";
+            }
+            else {
+                
+            }
+        }
+    ?>
 </div>
