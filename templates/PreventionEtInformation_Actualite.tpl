@@ -1,4 +1,4 @@
-<div class="RechPrevEtInf">
+<div class="Actualite">
 	<h1>Ebola <small>26/10/2014</small></h1>
 
 	<div class="row">
