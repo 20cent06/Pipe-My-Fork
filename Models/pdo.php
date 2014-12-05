@@ -57,8 +57,11 @@ class PdoTpPhp{
 		$rs = PdoTpPhp::$monPdo->query($req);
 		$tableau = $rs->fetchAll();
 		return $tableau;
-        }
+    }
 
+}
+
+/*
 
 	public function getInfosAnimateur($login, $mdp){
 		$req = "SELECT ID, LOGIN, PRIVILEGE, NOMCOMPLET FROM UTILISATEUR 
@@ -229,3 +232,5 @@ public function creerEntreeHistorique($type, $action,$detail,$nomUtilisateur){
 		return $idFic;
 		}
 	}ob_end_clean();
+
+	*/
