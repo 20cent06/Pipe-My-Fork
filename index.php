@@ -6,6 +6,7 @@
 
 <?php
     $page = (isset($_GET['page'])) ? htmlentities($_GET['page']) : NULL;
+    include 'config/config.php';
 ?>
 
 <html>
@@ -34,8 +35,8 @@
             <div id="header-background"></div>
             <ul class="nav nav-justified nav-pills">
                 <li><a href="index.php?page=PreventionEtInformation_Actualite.tpl"><img src="img/prevention.jpg" class="img-circle img-responsive"></a>Prévention & Information</li>
-                <li><a href="index.php?page=CampagneVaccination.tpl"><img src="img/prevention.jpg" class="img-circle img-responsive"></a>Campagne de vaccination</li>
-                <li><a href="#"><img src="img/prevention.jpg" class="img-circle img-responsive"></a>Déplacement de population</li>
+                <li><a href="index.php?page=CampagneVaccination.tpl"><img src="img/vaccination.jpg" class="img-circle img-responsive"></a>Campagne de vaccination</li>
+                <li><a href="#"><img src="img/deplacement_population.png" class="img-circle img-responsive"></a>Déplacement de population</li>
             </ul>
         </header>
         <div class="container">
