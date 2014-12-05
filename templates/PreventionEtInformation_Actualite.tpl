@@ -12,7 +12,7 @@
 		<div class="col-xs-9">
 			<div class="cadre-contenu">
 				<img src="img/Actualite-Ebola.png" class="img-responsive img-thumbnail" alt="img-responsive">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue erat suscipit, porttitor leo non, ultrices diam. Donec non quam mollis, blandit est ac, varius massa. Mauris a odio nec enim consequat imperdiet. Cras a rhoncus risus. Praesent nisi metus, malesuada eu lacinia nec, sodales eget nulla. Donec a auctor purus, vel pellentesque lectus. Donec quis condimentum leo, vel efficitur eros. Morbi eleifend finibus velit, sit amet vestibulum urna euismod quis.</br></br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue erat suscipit, porttitor leo non, ultrices diam. Donec non quam mollis, sblandit est ac, varius massa. Mauris a odio nec enim consequat imperdiet. Cras a rhoncus risus. Praesent nisi metus, malesuada eu lacinia nec, sodales eget nulla. Donec a auctor purus, vel pellentesque lectus. Donec quis condimentum leo, vel efficitur eros. Morbi eleifend finibus velit, sit amet vestibulum urna euismod quis.</br></br>
 
 				Vivamus bibendum odio vitae justo malesuada sagittis. Donec laoreet massa a tortor dignissim volutpat. Nulla efficitur quam vel eros eleifend vehicula. Integer dolor purus, bibendum nec risus eu, eleifend finibus nibh. Quisque varius egestas augue eu feugiat. Quisque pulvinar eleifend libero eu iaculis. Nullam lectus ex, convallis eget nulla at, commodo luctus nunc. Cras iaculis ipsum at tellus venenatis vehicula. Nullam tincidunt vulputate bibendum.</br></br>
 
