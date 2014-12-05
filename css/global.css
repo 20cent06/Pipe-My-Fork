@@ -7,29 +7,45 @@
     Author     : Pipe My Fork - Nuit de l'info 2014
 */
 /* line 9, ../sass/global.scss */
-header ul {
+header #header-background {
+  width: 100%;
+  position: absolute;
+  height: 95px;
   background-color: #397bce;
+  border-bottom: 5px solid #333333;
 }
-/* line 11, ../sass/global.scss */
+/* line 17, ../sass/global.scss */
 header ul li {
   text-align: center;
 }
-/* line 13, ../sass/global.scss */
+/* line 19, ../sass/global.scss */
 header ul li a {
   width: 180px;
   margin: auto;
 }
-/* line 16, ../sass/global.scss */
+/* line 22, ../sass/global.scss */
 header ul li a:hover {
   background-color: inherit !important;
 }
-/* line 20, ../sass/global.scss */
+/* line 26, ../sass/global.scss */
 header ul li a img {
   width: 150px;
   margin: auto;
 }
 
-/* line 30, ../sass/global.scss */
+<<<<<<< HEAD
+/* Acutalité */
+/* line 31, ../sass/global.scss */
+=======
+/* line 36, ../sass/global.scss */
+>>>>>>> FETCH_HEAD
 div .cadre-contenu {
   display: block;
 }
+/* line 34, ../sass/global.scss */
+div .cadre-contenu img {
+  float: left;
+  margin-right: 10px;
+}
+
+/* --Acutalité-- */

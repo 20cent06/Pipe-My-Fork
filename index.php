@@ -31,6 +31,7 @@
     </head>
     <body>
         <header>
+            <div id="header-background"></div>
             <ul class="nav nav-justified nav-pills">
                 <li><a href="index.php?page=PreventionEtInformation_Actualite.tpl"><img src="img/prevention.jpg" class="img-circle img-responsive"></a>Prévention & Information</li>
                 <li><a href="index.php?page=CampagneVaccination.tpl"><img src="img/prevention.jpg" class="img-circle img-responsive"></a>Campagne de vaccination</li>
