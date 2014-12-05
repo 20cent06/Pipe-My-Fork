@@ -14,7 +14,7 @@ class Actualites{
  */				
 	public function __construct($id){
 		$pdo = PdoTpPhp::getPdoTpPhp();
-		$actualite = $pdo->getGroupe($id); 
+		$actualite = $pdo->getActualite($id); 
 
 		$this->id = $actualite['ID'];
 		$this->titre = $actualite['TITRE'];
