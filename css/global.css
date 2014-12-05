@@ -33,16 +33,12 @@ header ul li a img {
   margin: auto;
 }
 
-<<<<<<< HEAD
 /* Acutalité */
-/* line 31, ../sass/global.scss */
-=======
-/* line 36, ../sass/global.scss */
->>>>>>> FETCH_HEAD
+/* line 37, ../sass/global.scss */
 div .cadre-contenu {
   display: block;
 }
-/* line 34, ../sass/global.scss */
+/* line 40, ../sass/global.scss */
 div .cadre-contenu img {
   float: left;
   margin-right: 10px;
