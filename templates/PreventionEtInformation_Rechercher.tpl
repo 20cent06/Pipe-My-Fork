@@ -8,8 +8,8 @@
 				foreach ($listA->getLieux() as $lieu) {
 					$i=0;
 					echo "<option>";
-					echo $lieu[$i]['LIEUX'];
-					echo "</option>"
+					echo $lieu['LIEUX'][$i];
+					echo "</option>";
 					$i = $i + 1;
 				}
 
