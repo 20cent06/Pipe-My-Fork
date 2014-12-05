@@ -59,6 +59,13 @@ class PdoTpPhp{
 		return $tableau;
     }
 
+    public function getLieux(){
+		$req = "SELECT LIEUX FROM LOCALISATION";
+		$rs = PdoTpPhp::$monPdo->query($req);
+		$tableau = $rs->fetchAll();
+		return $tableau;
+    }
+
 
 }
 

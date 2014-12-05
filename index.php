@@ -9,6 +9,7 @@
     include 'Models/pdo.php';
     include 'Models/Class.Actualites.php';
     include 'Models/Personne.php';
+    include 'Models/Class.ListActualites.php';
 ?>
 
 <html>

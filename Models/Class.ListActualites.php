@@ -2,7 +2,8 @@
 
 class ListActualites{		
   	private $listActualite;
-  	private $lieu;    		
+  	private $lieu;
+  	private $lieux;  		
 /**
  * Constructeur privé, crée l'instance de l'utilisateur
  * pour toutes les méthodes de la classe
@@ -11,6 +12,7 @@ class ListActualites{
 		$pdo = PdoTpPhp::getPdoTpPhp();
 		$this->listActualite = $pdo->getActualites($lieux);
 		$this->lieu = $lieux;
+		$this->lieux = $pdo->getLieux();
 	} // public function __construct(...)
 
 
@@ -20,6 +22,11 @@ class ListActualites{
 
 	public function getLieu(){
 		return $this->lieu;
+	}
+
+	static function getLieux(){
+		return $this->lieux;
+	}
 
 }
 ?>
