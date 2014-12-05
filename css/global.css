@@ -84,7 +84,16 @@ div .cadre-contenu {
 /* line 60, ../sass/global.scss */
 div .cadre-contenu img {
   float: left;
-  margin-right: 10px;
+  margin-right: 15px;
+}
+/* line 46, ../sass/global.scss */
+div .cadre-menu-actualite {
+  /*border: 2px solid $header_background;*/
+  width: 100%;
+}
+/* line 50, ../sass/global.scss */
+div .cadre-menu-actualite .centrer {
+  margin-left: 2px;
 }
 
 /* --Acutalité-- */
