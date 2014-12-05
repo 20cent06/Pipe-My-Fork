@@ -6,8 +6,14 @@
 @import "variables";
 
 header {
-    ul {
+    #header-background {
+        width: 100%;
+        position: absolute;
+        height: 95px;
         background-color: $header_background;
+        border-bottom: 5px solid $border-color;
+    }
+    ul {
         li {
             text-align: center;
             a {
