@@ -48,4 +48,11 @@ class Personnes{
 		$pdo = PdoTpPhp::getPdoTpPhp();
 		$pdo->addPersonne($nom, $prenom, $age, $sexe);
 	}
+
+	public static function getIdPersonne($nom){
+		$pdo = PdoTpPhp::getPdoTpPhp();
+		$personne = new Personnes($pdo->getIdPersonne($nom));
+		return $personne;
+		
+	}
 }

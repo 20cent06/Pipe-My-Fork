@@ -80,6 +80,14 @@ class PdoTpPhp{
 		return $ligne;
 	}
 
+	public function getIdPersonne($nom){
+		$req = "SELECT id FROM personne
+		WHERE nom='".$nom."'";
+		$rs = PdoTpPhp::$monPdo->query($req);
+		$ligne = $rs->fetch();
+		return $ligne['NOM'];
+	}
+
 
 }
 
