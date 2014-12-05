@@ -51,13 +51,14 @@ class PdoTpPhp{
 		return $ligne;
 	}
 
-	public function getActualites($pays){
-		$req = "SELECT ID, TITRE, INFO, IMAGE, DATES FROM NEWS 
-		WHERE PRIVILEGE =1 AND ID !=".$_SESSION['ID']." ORDER BY NOMCOMPLET";
+	public function getActualites($lieux){
+		$req = "SELECT ID, TITRE, INFO, IMAGE, DATES, LIEUX FROM NEWS, ACTULIEU
+		WHERE ACTULIEU.IDNEW = NEWS.ID AND LIEUX = '".$lieux."' ORDER BY DATE";
 		$rs = PdoTpPhp::$monPdo->query($req);
 		$tableau = $rs->fetchAll();
 		return $tableau;
     }
+
 
 }
 
