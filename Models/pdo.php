@@ -44,8 +44,8 @@ class PdoTpPhp{
 	}
 
 	public function getActualite($id){
-		$req = "SELECT ID, TITRE, INFO, IMAGE, DATES FROM NEWS
-		WHERE ID='$id'";
+		$req = "SELECT id, titre, info, image, dates FROM NEWS
+		WHERE id='$id'";
 		$rs = PdoTpPhp::$monPdo->query($req);
 		$ligne = $rs->fetch();
 		return $ligne;
