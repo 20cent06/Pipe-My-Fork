@@ -10,3 +10,6 @@ $hote = 'localhost';
 $bdd_login = 'root';
 $bdd_mdp = '';
 $bdd = 'pipe-my-fork';
+
+mysql_connect($hote, $bdd_login, $bdd_mdp);
+mysql_select_db($bdd);
