@@ -2,7 +2,7 @@
 $page = (isset($_GET['page'])) ? htmlentities($_GET['page']) : NULL;
     include 'config/config.php';
 ?>
-<div class="container">
+<div class="stock-container">
     <h1 style="text-align: center; color: red">Gestion des Stocks de Vaccin</h1>
     Rechercher un Vaccin : <select class="form-control">
         <?php 
