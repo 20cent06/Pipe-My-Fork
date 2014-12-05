@@ -24,7 +24,7 @@ class ListActualites{
 		return $this->lieu;
 	}
 
-	static function getLieux(){
+	public function getLieux(){
 		return $this->lieux;
 	}
 

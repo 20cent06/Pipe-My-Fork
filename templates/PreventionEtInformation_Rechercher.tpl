@@ -4,11 +4,14 @@
 			<h3>Rechercher Pays</h3>
 			<select class="form-control">
 				<?php
-
-				foreach (ListActualites->getLieux() as $lieu) {
-				echo "<option>";
-				echo $lieu['LIEUX'];
-				echo "</option>"
+				$listA = new ListActualites('France');
+				foreach ($listA->getLieux() as $lieu) {
+					$i=0;
+					echo "<option>";
+					echo $lieu[$i]['LIEUX'];
+					echo "</option>"
+					$i++;
+				}
 
 
 				?>
