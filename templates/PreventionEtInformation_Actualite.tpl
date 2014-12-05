@@ -1,10 +1,8 @@
 <div class="Actualite">
 	<h1>
-		<?php
-		$pdo = PdoTpPhp::getPdoTpPhp();
-		$actualite = $pdo->getActualite(1); 
-	
-	echo $actualite['titre'];
+	<?php
+	$actu = new Actualites(1);
+	echo $actu->getTitre();
 	?> 
 	<small>26/10/2014</small></h1>
 
