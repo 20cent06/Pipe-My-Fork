@@ -11,5 +11,5 @@ $bdd_login = 'user';
 $bdd_mdp = 'user';
 $bdd = 'pipe-my-fork';
 
-$log = mysqli_connect($hote, $bdd_login, $bdd_mdp);
-mysqli_select_db($log, $bdd);
+$link = mysqli_connect($hote, $bdd_login, $bdd_mdp);
+mysqli_select_db($link, $bdd);
