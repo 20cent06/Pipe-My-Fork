@@ -66,6 +66,20 @@ class PdoTpPhp{
 		return $tableau;
     }
 
+    public function addPersonne($nom, $prenom, $age, $sexe){
+		$req = "INSERT INTO PERSONNE(NOM, PRENOM, AGE, SEXE)
+		 VALUES ('".$nom."','".$prenom."','".$age."','".$sexe."')";
+		$rs = PdoTpPhp::$monPdo->query($req);
+	}
+
+	public function getPersonne($id){
+		$req = "SELECT ID, NOM, PRENOM, AGE, SEXE FROM PERSONNE
+		WHERE id=".$id;
+		$rs = PdoTpPhp::$monPdo->query($req);
+		$ligne = $rs->fetch();
+		return $ligne;
+	}
+
 
 }
 

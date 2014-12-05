@@ -25,28 +25,27 @@ class Personnes{
 
 
 	public function getId(){
-		return $this->idGroupe;
+		return $this->id;
 	}
 
-	public function getNomGroupe(){
-		return $this->nomGroupe;
+	public function getNom(){
+		return $this->nom;
 	}
 
-	public function getChemin(){
-		return $this->chemin;
+	public function getPrenom(){
+		return $this->prenom;
 	}
 
-	public function getFichiers(){
-		return $this->fichiers;  
+	public function getAge(){
+		return $this->age;  
 	}
 
-	public function getNbFichiers(){
-		return $this->nbFichiers;
+	public function getSexe(){
+		return $this->sexe;
 	}
 
-	public static function getGroupes(){
+	public static function addPersonne($nom, $prenom, $age, $sexe){
 		$pdo = PdoTpPhp::getPdoTpPhp();
-		$groupes = $pdo->getGroupes();
-		return $groupes;
+		$add = $pdo->addPersonne($nom, $prenom, $age, $sexe);
 	}
 }
