@@ -1,3 +1,6 @@
+<?php
+    error_reporting( E_ALL );
+?>
 <div class="vacciner-container">
     <h1 style="text-align: center; color: red">Ajouter Une Personne Vacciner</h1>
     
@@ -46,7 +49,7 @@
 </form>
     <?php
         if(isset($_POST['valider'])){
-            if (isset ($_POST['nom'])){
+            if (isset ($_POST['nom'])&&isset($_POST['prenom'])&&isset($_POST['age'])&&isset($_POST['sexe'])){
                 Personnes::addPersonne($_POST['nom'], $_POST['prenom'], $_POST['age'],$_POST['sexe']);
             }
         }
