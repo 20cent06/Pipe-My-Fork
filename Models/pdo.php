@@ -51,7 +51,7 @@ class PdoTpPhp{
 		return $ligne;
 	}
 
-	public function getActualites(){
+	public function getActualites($pays){
 		$req = "SELECT ID, TITRE, INFO, IMAGE, DATES FROM NEWS 
 		WHERE PRIVILEGE =1 AND ID !=".$_SESSION['ID']." ORDER BY NOMCOMPLET";
 		$rs = PdoTpPhp::$monPdo->query($req);
