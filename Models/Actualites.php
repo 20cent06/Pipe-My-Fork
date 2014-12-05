@@ -6,7 +6,7 @@ class Actualites{
 	private $id;   		
   	private $titre;
   	private $info;    		
-	private $date; /* contient tout les fichiers dans les différents groupes */
+	private $dates; /* contient tout les fichiers dans les différents groupes */
 	private $image;
 /**
  * Constructeur privé, crée l'instance de l'utilisateur
@@ -19,7 +19,7 @@ class Actualites{
 		$this->id = $actualite['ID'];
 		$this->titre = $actualite['TITRE'];
 		$this->info = $actualite['CHEMINGROUPE'];
-		$this->date = $actualite['DATE'];
+		$this->dates = $actualite['DATES'];
 		$this->info = $actualite['IMAGE'];
 	} // public function __construct(...)
 
@@ -29,19 +29,19 @@ class Actualites{
 	}
 
 	public function getTitre(){
-		return $this->nomGroupe;
+		return $this->titre;
 	}
 
 	public function getInfo(){
-		return $this->chemin;
+		return $this->info;
 	}
 
 	public function getDate(){
-		return $this->fichiers;  
+		return $this->dates;  
 	}
 
 	public function getImage(){
-		return $this->nbFichiers;
+		return $this->image;
 	}
 
 }
