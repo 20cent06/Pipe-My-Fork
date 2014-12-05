@@ -68,7 +68,7 @@ class PdoTpPhp{
 
     public function addPersonne($nom, $prenom, $age, $sexe){
 		$req = "INSERT INTO PERSONNE(NOM, PRENOM, AGE, SEXE)
-		 VALUES ('".$nom."','".$prenom."','".$age."','".$sexe."')";
+		 VALUES ('".$nom."','".$prenom."',".$age.",'".$sexe."')";
 		$rs = PdoTpPhp::$monPdo->query($req);
 	}
 
