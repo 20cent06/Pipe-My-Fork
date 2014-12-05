@@ -6,7 +6,49 @@
     Created on : 5 déc. 2014, 00:26:16
     Author     : Pipe My Fork - Nuit de l'info 2014
 */
-/* line 9, ../sass/global.scss */
+/* line 8, ../sass/global.scss */
+html {
+  height: 100%;
+}
+
+/* Annimation Header */
+/* Chrome, Safari, Opera */
+@-webkit-keyframes header {
+  /* line 15, ../sass/global.scss */
+  0% {
+    height: 95px;
+  }
+
+  /* line 16, ../sass/global.scss */
+  50% {
+    height: 500px;
+  }
+
+  /* line 17, ../sass/global.scss */
+  100% {
+    height: 95px;
+  }
+}
+
+/* Standard syntax */
+@keyframes header {
+  /* line 22, ../sass/global.scss */
+  0% {
+    height: 95px;
+  }
+
+  /* line 23, ../sass/global.scss */
+  50% {
+    height: 500px;
+  }
+
+  /* line 24, ../sass/global.scss */
+  100% {
+    height: 95px;
+  }
+}
+
+/* line 28, ../sass/global.scss */
 header #header-background {
   width: 100%;
   position: absolute;
@@ -14,31 +56,32 @@ header #header-background {
   background-color: #397bce;
   border-bottom: 5px solid #333333;
 }
-/* line 17, ../sass/global.scss */
+/* line 36, ../sass/global.scss */
 header ul li {
   text-align: center;
 }
-/* line 19, ../sass/global.scss */
+/* line 38, ../sass/global.scss */
 header ul li a {
   width: 180px;
   margin: auto;
 }
-/* line 22, ../sass/global.scss */
+/* line 41, ../sass/global.scss */
 header ul li a:hover {
   background-color: inherit !important;
 }
-/* line 26, ../sass/global.scss */
+/* line 45, ../sass/global.scss */
 header ul li a img {
   width: 150px;
   margin: auto;
+  height: 150px !important;
 }
 
 /* Acutalité */
-/* line 37, ../sass/global.scss */
+/* line 57, ../sass/global.scss */
 div .cadre-contenu {
   display: block;
 }
-/* line 40, ../sass/global.scss */
+/* line 60, ../sass/global.scss */
 div .cadre-contenu img {
   float: left;
   margin-right: 10px;
