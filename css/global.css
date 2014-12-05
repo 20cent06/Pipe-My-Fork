@@ -29,7 +29,15 @@ header ul li a img {
   margin: auto;
 }
 
-/* line 30, ../sass/global.scss */
+/* Acutalité */
+/* line 31, ../sass/global.scss */
 div .cadre-contenu {
   display: block;
 }
+/* line 34, ../sass/global.scss */
+div .cadre-contenu img {
+  float: left;
+  margin-right: 10px;
+}
+
+/* --Acutalité-- */
