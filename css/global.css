@@ -146,3 +146,11 @@ header ul li a img {
 }
 
 /* --Acutalité-- */
+/* Vaccination */
+/* line 101, ../sass/global.scss */
+.vaccination-container h1 {
+  text-align: center;
+  color: red;
+}
+
+/* --Vaccination-- */

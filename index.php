@@ -53,7 +53,7 @@
             ?>
         </div>
         <footer>
-            
+            <div id="footer-background"></div>
         </footer>
     </body>
     
