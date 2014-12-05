@@ -12,43 +12,85 @@ html {
 }
 
 /* Annimation Header */
+/* Background DIV */
 /* Chrome, Safari, Opera */
-@-webkit-keyframes header {
-  /* line 15, ../sass/global.scss */
+@-webkit-keyframes header-background {
+  /* line 16, ../sass/global.scss */
   0% {
     height: 95px;
   }
 
-  /* line 16, ../sass/global.scss */
+  /* line 17, ../sass/global.scss */
   50% {
-    height: 500px;
+    height: 100%;
   }
 
-  /* line 17, ../sass/global.scss */
+  /* line 18, ../sass/global.scss */
   100% {
     height: 95px;
   }
 }
 
 /* Standard syntax */
-@keyframes header {
-  /* line 22, ../sass/global.scss */
+@keyframes header-background {
+  /* line 23, ../sass/global.scss */
   0% {
     height: 95px;
   }
 
-  /* line 23, ../sass/global.scss */
+  /* line 24, ../sass/global.scss */
   50% {
-    height: 500px;
+    height: 100%;
   }
 
-  /* line 24, ../sass/global.scss */
+  /* line 25, ../sass/global.scss */
   100% {
     height: 95px;
   }
 }
 
-/* line 28, ../sass/global.scss */
+/* Buttons */
+/* Chrome, Safari, Opera */
+@-webkit-keyframes header-buttons {
+  /* line 31, ../sass/global.scss */
+  0% {
+    padding-top: 0px;
+  }
+
+  /* line 32, ../sass/global.scss */
+  50% {
+    padding-top: 40vh;
+  }
+
+  /* line 33, ../sass/global.scss */
+  100% {
+    padding-top: 0px;
+  }
+}
+
+/* Standard syntax */
+@keyframes header-buttons {
+  /* line 38, ../sass/global.scss */
+  0% {
+    padding-top: 0px;
+  }
+
+  /* line 39, ../sass/global.scss */
+  50% {
+    padding-top: 40vh;
+  }
+
+  /* line 40, ../sass/global.scss */
+  100% {
+    padding-top: 0px;
+  }
+}
+
+/* line 43, ../sass/global.scss */
+header {
+  position: absolute;
+}
+/* line 45, ../sass/global.scss */
 header #header-background {
   width: 100%;
   position: absolute;
@@ -56,43 +98,49 @@ header #header-background {
   background-color: #397bce;
   border-bottom: 5px solid #333333;
 }
-/* line 36, ../sass/global.scss */
+/* line 53, ../sass/global.scss */
 header ul li {
   text-align: center;
 }
-/* line 38, ../sass/global.scss */
+/* line 55, ../sass/global.scss */
 header ul li a {
   width: 180px;
   margin: auto;
 }
-/* line 41, ../sass/global.scss */
+/* line 58, ../sass/global.scss */
 header ul li a:hover {
   background-color: inherit !important;
 }
-/* line 45, ../sass/global.scss */
+/* line 62, ../sass/global.scss */
 header ul li a img {
   width: 150px;
   margin: auto;
   height: 150px !important;
 }
 
+/* line 72, ../sass/global.scss */
+.container {
+  padding-top: 180px;
+}
+
 /* Acutalité */
-/* line 57, ../sass/global.scss */
-div .cadre-contenu {
+/* line 77, ../sass/global.scss */
+.cadre-contenu {
   display: block;
 }
-/* line 60, ../sass/global.scss */
-div .cadre-contenu img {
+/* line 80, ../sass/global.scss */
+.cadre-contenu img {
   float: left;
   margin-right: 15px;
 }
-/* line 46, ../sass/global.scss */
-div .cadre-menu-actualite {
+
+/* line 86, ../sass/global.scss */
+.cadre-menu-actualite {
   /*border: 2px solid $header_background;*/
   width: 100%;
 }
-/* line 50, ../sass/global.scss */
-div .cadre-menu-actualite .centrer {
+/* line 90, ../sass/global.scss */
+.cadre-menu-actualite .centrer {
   margin-left: 2px;
 }
 

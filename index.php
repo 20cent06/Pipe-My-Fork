@@ -6,7 +6,9 @@
 
 <?php
     $page = (isset($_GET['page'])) ? htmlentities($_GET['page']) : NULL;
-    include 'config/config.php';
+    include 'Models/pdo.php';
+    include 'Models/Class.Actualites.php';
+    include 'Models/Personne.php';
 ?>
 
 <html>

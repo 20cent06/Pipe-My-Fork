@@ -1,6 +1,6 @@
 <div class="Actualite">
 	<h1>
-		<?php
+	<?php
 	$actu = new Actualites(1);
 	echo "$actu->getTitre()";
 	?> 
