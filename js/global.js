@@ -8,6 +8,8 @@ $( document ).ready(function(){
     $("#header-background").css("animation", "header-background 3s linear alternate"); //Standard syntax
     $("header ul li").css("-webkit-animation", "header-buttons 3s linear alternate"); //Chrome, Safari, Opera
     $("header ul li").css("animation", "header-buttons 3s linear alternate"); //Standard syntax
+    $("#footer-background").css("-webkit-animation", "footer-background 3s linear alternate"); //Chrome, Safari, Opera
+    $("#footer-background").css("animation", "footer-background 3s linear alternate"); //Standard syntax
     $(".container").fadeOut();
     $(".container").delay(2500).fadeIn();
 });

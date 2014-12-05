@@ -114,43 +114,91 @@ header ul li a:hover {
 }
 /* line 63, ../sass/global.scss */
 header ul li a img {
+  z-index: 1;
   width: 150px;
   margin: auto;
   height: 150px !important;
 }
 
-/* line 73, ../sass/global.scss */
+/* line 74, ../sass/global.scss */
 .container {
   padding-top: 200px;
 }
 
 /* Acutalité */
-/* line 78, ../sass/global.scss */
+/* line 79, ../sass/global.scss */
 .cadre-contenu {
   display: block;
 }
-/* line 81, ../sass/global.scss */
+/* line 82, ../sass/global.scss */
 .cadre-contenu img {
   float: left;
   margin-right: 15px;
 }
 
-/* line 87, ../sass/global.scss */
+/* line 88, ../sass/global.scss */
 .cadre-menu-actualite {
   /*border: 2px solid $header_background;*/
   width: 100%;
 }
-/* line 91, ../sass/global.scss */
+/* line 92, ../sass/global.scss */
 .cadre-menu-actualite .centrer {
   margin-left: 2px;
 }
 
 /* --Acutalité-- */
 /* Vaccination */
-/* line 101, ../sass/global.scss */
+/* line 102, ../sass/global.scss */
 .vaccination-container h1 {
   text-align: center;
   color: red;
 }
 
 /* --Vaccination-- */
+/* Annimation Footer */
+/* Background DIV */
+/* Chrome, Safari, Opera */
+@-webkit-keyframes footer-background {
+  /* line 114, ../sass/global.scss */
+  0% {
+    height: 95px;
+  }
+
+  /* line 115, ../sass/global.scss */
+  50% {
+    height: 50%;
+  }
+
+  /* line 116, ../sass/global.scss */
+  100% {
+    height: 95px;
+  }
+}
+
+/* Standard syntax */
+@keyframes footer-background {
+  /* line 121, ../sass/global.scss */
+  0% {
+    height: 95px;
+  }
+
+  /* line 122, ../sass/global.scss */
+  50% {
+    height: 50%;
+  }
+
+  /* line 123, ../sass/global.scss */
+  100% {
+    height: 95px;
+  }
+}
+
+/* line 127, ../sass/global.scss */
+footer #footer-background {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  height: 95px;
+  background-color: #383f50;
+  border-top: 5px solid #333333;
+}
