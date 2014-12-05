@@ -10,7 +10,7 @@
 					echo "<option>";
 					echo $lieu[$i]['LIEUX'];
 					echo "</option>"
-					$i++;
+					$i = $i + 1;
 				}
 
 
