@@ -32,9 +32,15 @@ header {
     }
 }
 
+/* Acutalité */
 div {
 	.cadre-contenu {
-		display: block;
+		display: block;	
 
+		img {
+			float: left;
+			margin-right: 10px;
+		}
 	}
 }
+/* --Acutalité-- */
