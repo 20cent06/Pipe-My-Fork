@@ -1,0 +1,81 @@
+<?php 
+$DB_HOST = '127.0.0.1';
+$DB_USER = 'user';
+$DB_PASS = 'user';
+$DB_NAME = 'pipe-my-fork';
+$mysqli = mysql_connect($DB_HOST, $DB_USER, $DB_PASS);
+mysql_select_db($DB_NAME,$mysqli);
+
+
+
+$sql_tot = "SELECT COUNT(*) FROM personne";
+$rst_tot = mysql_query($sql_tot);// or die ("requete: $sql_tot <br />".mysql_error());
+ 
+ // requete qui recupere les enfants filles ( -12ans)
+$sql_enfant_fille="SELECT COUNT (*) FROM personne WHERE age < '12' AND sexe = 'F' ";
+$rst_enfant_fille=mysql_query($sql_enfant_fille / $rst_tot);// or die (" requete: $sql_enfant_fille\n<br />".mysql_error());
+ 
+
+?>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html ng-app="myApp" ng-app lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/pieChart.css" rel="stylesheet">
+    <style type="text/css">
+    ul>li, a{cursor: pointer;}
+    </style>
+    <title>Effectifs dans les camps</title>
+	
+	<script src="js/jQuery.js"></script>
+	<script src="js/pieChart.js"></script>
+</head>
+<body>
+
+
+
+<div ng-controller="customersCrtl">
+<div class="container">
+<br/>
+<blockquote><h4>Effectifs dans les camps</h4></blockquote>
+<br/>
+
+    <br/>
+            
+
+		  <table id="chartData">
+          <canvas id="chart" width="600" height="500"></canvas>
+			<tr>
+			  <th>Catégories</th><th>Effectifs</th>
+			 </tr>
+
+			<tr style="color: #0DA068">
+			  <td>Homme adulte</td><td></div><?php $rst_hommes ?></td>
+			</tr>
+
+			<tr style="color: #194E9C">
+			  <td>Femme Adulte</td><td><?php $rst_femmes ?></td>
+			</tr>
+
+			<tr style="color: #ED9C13">
+			  <td>Homme enfant ( -12 ans )</td><td><?php $rst_enfant_masc ?></td>
+			</tr>
+
+			<tr style="color: #ED5713">
+			  <td>Femme enfant (- 12 ans )</td><td><?php $rst_enfant_fille ?></td>
+			</tr>
+  </table>
+    
+</div>
+<script src="js/angular.min.js"></script>
+<script src="js/ui-bootstrap-tpls-0.10.0.min.js"></script>
+<script src="app/app.js"></script>         
+    </body>
+</html>
