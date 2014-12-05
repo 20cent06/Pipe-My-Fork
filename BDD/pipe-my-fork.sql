@@ -93,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `personne` (
   `prenom` text COLLATE utf8_bin NOT NULL,
   `age` int(11) NOT NULL,
   `sexe` text COLLATE utf8_bin NOT NULL,
-  `idFoyer` int(11) NOT NULL,
+  `idFoyer` int(11) NULL,
   PRIMARY KEY (`id`),
   KEY `idFoyer` (`idFoyer`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
